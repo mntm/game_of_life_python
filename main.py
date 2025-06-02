@@ -45,14 +45,3 @@ def print_matrix () :
 
 print_matrix();
 
-for i in range (10):
-    for j in range(10):
-        if (i==0):
-            if (j == 0):
-                if (matrix_cell[i][j]==0):
-                    if (matrix_cell[i][j+1] == 1 and matrix_cell[i+1][j] == 1 and matrix_cell[i+1][j+1] == 1):
-                        matrix_cell[i][j] = 1
-                else:
-                    count = matrix_cell[i][j+1] + matrix_cell[i+1][j] + matrix_cell[i+1][j+1]
-                    if (count < 2):
-                        matrix_cell[i][j] = 0
